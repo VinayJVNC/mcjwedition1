@@ -1,56 +1,81 @@
+
+//MOBILE
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+	.homepagePromotionalBlock img {
+	    margin-bottom: 2%;
+	}
+	.logo{
+		max-width: 50%;
+	    width: 50%;
+	    margin: 0 auto;
+	    display: inline-block;
+	    float: none;	    
+	    right: 0;
+	    left: 0;
+	    clear: both;
+	}
+	.minicart-wrapper, .block-search{
+		margin-top: 0;
+	}
+	.block-search .label:before,.minicart-wrapper .action.showcart:before{
+	    line-height: 21px;
+	}
+	.page-footer {	    	    
+	    background-size: @footer_image_background_size_tablet_resolution !important;
+	}
+}
+
+//Small Styling Goes here
+@media only screen and (min-width: @mobile_screen){
+	
+}
+
+//medium Styling Goes here (992px)
+@media only screen and (min-width: @medium_screen){
+	.logo {	 
+	    left: 27%;
+	}
+	.GutterSpace {
+	    margin-bottom: 60px;
+	}
+	.page-footer {	    	    
+	    background-size: @footer_image_background_size_medium_resolution !important;
+	}
+	.homepagePromotionalBlock img {
+	    height: 140px;
+	    margin-bottom: 2%;
+	}
+}
+
+//large Styling Goes here (1200px)
+@media only screen and (min-width: @large_screen){
+	.staticFixedHeader {
+	    min-height: 200px;
+	    max-height: 200px;
+	    position: fixed;
+	    width: 100%;
+	    background: @color-White;
+	    z-index: 9999;
+	}
+	.GutterSpace {		
+	    margin-bottom: 220px;
+	}
+	.homepagePromotionalBlock img {
+	    height: 186px;
+	    margin-bottom: 2%;
+	}
+	.page-footer{
+		background-size: @footer_image_background_size !important;
+	}
+}
+
+
+//Common Styling Goes here
+
 .banner_str_img {	
     clear: both;
     display: inline;
 }
 ul.header.links.secondary {
     clear: both;
-}
-
-
-// Mobile Screen Resoultion
-/*@media only screen and (max-width: @laptop_screen){
-.staticFixedHeader {
-    min-height: 200px;
-    max-height: 200px;
-    position: fixed;
-    width: 100%;
-    background: @color-White;
-    z-index: 9999;
-}
-.GutterSpace {
-    margin-bottom: 200px;
-}
-.homepagePromotionalBlock img {
-    height: 186px;
-    margin-bottom: 2%;
-}
-}*/
-
-@media only screen and (max-width: @tablet_screen){
-	.staticFixedHeader {
-	    min-height: 200px;
-	    max-height: 200px;	    
-	    width: 100%;
-	    background: @color-White;	    
-	}
-	.GutterSpace {
-	    margin-bottom: 200px;
-	}
-	.homepagePromotionalBlock img {
-	    height: auto;
-	}
-	.page-footer {	    	    
-	    background-size: @footer_image_background_size_tablet_resolution;
-	}
-}
-@media only screen and (min-width: laptop_screen){
-	.GutterSpace {
-	    margin-bottom: 200px;
-	}
-	.homepagePromotionalBlock img {
-	    height: 140px;
-	}
-	.page-footer{
-		background-size: @footer_image_background_size;
-	}
 }
