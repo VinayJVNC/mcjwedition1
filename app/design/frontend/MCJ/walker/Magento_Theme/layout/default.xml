@@ -73,7 +73,7 @@
         </referenceBlock>
         <referenceContainer name="footer">
             <block class="Magento\Store\Block\Switcher" name="store_switcher" as="store_switcher" after="footer_links" template="switch/stores.phtml"/>
-            <referenceBlock name="footer_links">
+            <!-- <referenceBlock name="footer_links">
                     <block class="Magento\Framework\View\Element\Html\Link\Current" name="Press">
                         <arguments>
                             <argument name="label" xsi:type="string">Press</argument>
@@ -122,7 +122,7 @@
                             <argument name="path" xsi:type="string">return-policy</argument>
                         </arguments>
                     </block>            
-                </referenceBlock>
+                </referenceBlock> -->
         </referenceContainer>        
         <move element="copyright" destination="footer" after="footer_links"/>
 
