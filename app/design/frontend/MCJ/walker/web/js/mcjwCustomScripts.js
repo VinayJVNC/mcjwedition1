@@ -7,10 +7,10 @@ require([
 			
 			/*Search transition*/
 
-			$('input#search').onclick(function(){
+			$('input#search').click(function(){
 				$('input#search').css('width','100%');
 			});
-			$('input#search').focus(function(){
+			$('input#search').blur(function(){
 				if($('input#search').val().length>=1){
 					$('input#search').css('width','100%');
 				}
