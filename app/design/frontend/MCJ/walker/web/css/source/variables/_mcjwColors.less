@@ -1,9 +1,41 @@
 //-----------------------------------------------------------------------------------------------------------------------
+// Color-Variable declaration
+//-----------------------------------------------------------------------------------------------------------------------
+//Color: #555759
+
+@colorMCJW_PMS425: rgba(85,87,89,1);//#555759
+@colorMCJW_PMS425_light: rgba(85,87,89,0.7);//#555759
+@colorMCJW_PMS425_lighter: rgba(85,87,89,0.5);//#555759
+
+//Color: #A4A9AD
+
+@colorMCJW_PMS429:rgba(164,169,173,1); 
+@colorMCJW_PMS429_light:rgba(164,169,173,0.7); 
+@colorMCJW_PMS429_lighter:rgba(164,169,173,05); 
+
+//Color: #D1D3D3
+
+@colorMCJW_PMS427: rgba(209,211,211,1); //#D1D3D3
+@colorMCJW_PMS427_light : rgba(209,211,211,0.7);
+@colorMCJW_PMS427_lighter: rgba(209,211,211,0.5);
+
+@colorMCJW_hover: @colorMCJW_PMS425_light;
+@colorMCJW_visited: @colorMCJW_PMS425_lighter;
+
+@color-White: #fff;
+
+@footer-links: @colorMCJW_PMS425;
+@footer-links_hover: @colorMCJW_PMS425_light;
+@footer-links_visited: @colorMCJW_PMS425_lighter;
+
+@footer__background-color_MCJW: @color-White;
+
+//-----------------------------------------------------------------------------------------------------------------------
 //Body Text Color
 //-----------------------------------------------------------------------------------------------------------------------
-/*
-@body: ;
-*/
+
+@body: @colorMCJW_PMS425;
+
 //-----------------------------------------------------------------------------------------------------------------------
 // Button Properties
 //-----------------------------------------------------------------------------------------------------------------------
@@ -24,15 +56,3 @@
 //-----------------------------------------------------------------------------------------------------------------------
 
 @border-right: #512C1D;
-
-@colorMCJW: rgba(209,211,211,1);//#D1D3D3
-@colorMCJW_hover: rgba(209,211,211,0.5);
-@colorMCJW_visited: rgba(209,211,211,0.7);
-
-@color-White: #fff;
-
-@footer-links: @colorMCJW;
-@footer-links_hover: @colorMCJW_hover;
-@footer-links_visited: @colorMCJW_visited;
-
-@footer__background-color_MCJW: @color-White;
