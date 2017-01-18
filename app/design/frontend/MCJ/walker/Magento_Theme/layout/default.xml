@@ -73,7 +73,18 @@
         </referenceBlock>
         <referenceContainer name="footer">
             <block class="Magento\Store\Block\Switcher" name="store_switcher" as="store_switcher" after="footer_links" template="switch/stores.phtml"/>
-            <!-- <referenceBlock name="footer_links">
+            <block class="Magento\Cms\Block\Block" name="footer-text" before="footer_links">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">footer-text</argument>
+                </arguments>
+            </block>
+			<block class="Magento\Cms\Block\Block" name="promotional-bottom-block6" before="footer-text">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">promotional-bottom-block6</argument>
+                </arguments>
+            </block>
+			
+			<!-- <referenceBlock name="footer_links">
                     <block class="Magento\Framework\View\Element\Html\Link\Current" name="Press">
                         <arguments>
                             <argument name="label" xsi:type="string">Press</argument>
