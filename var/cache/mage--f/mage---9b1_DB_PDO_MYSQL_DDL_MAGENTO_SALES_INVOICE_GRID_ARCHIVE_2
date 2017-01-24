@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1484749718;s:6:"expire";d:9999999999;s:4:"tags";s:40:"9b1_DB_PDO_MYSQL_DDL,9b1_DB_DDL,9b1_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1485240977;s:6:"expire";d:9999999999;s:4:"tags";s:40:"9b1_DB_PDO_MYSQL_DDL,9b1_DB_DDL,9b1_MAGE";}
 s:3006:"CREATE TABLE `magento_sales_invoice_grid_archive` (
   `entity_id` int(10) unsigned NOT NULL COMMENT 'Entity Id',
   `increment_id` varchar(50) DEFAULT NULL COMMENT 'Increment Id',

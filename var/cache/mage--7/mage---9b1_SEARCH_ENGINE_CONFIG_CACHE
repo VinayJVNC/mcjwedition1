@@ -1,0 +1,2 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1485241664;s:6:"expire";d:9999999999;s:4:"tags";s:19:"9b1_CONFIG,9b1_MAGE";}
+a:3:{s:5:"mysql";a:1:{i:0;s:8:"synonyms";}s:13:"elasticsearch";a:1:{i:0;s:8:"synonyms";}s:4:"solr";a:0:{}}
