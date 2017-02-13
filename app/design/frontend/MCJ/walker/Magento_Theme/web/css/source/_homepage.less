@@ -109,7 +109,11 @@
 ul.header.links.secondary {
     clear: both;
 }
-
+.block.newsletter {
+	&button.action.subscribe.primary {
+		font-size: @font-promo-block-newsletter;
+	}
+}
 .promotional-bottom-block5{    
 	.root-block{
 		background-color: @our-roots-color;
@@ -134,7 +138,24 @@ ul.header.links.secondary {
 	}	
 }
 
-.facebook_icon:before {
-    content: '\f09a';
-	.FontAwesome_icon_styles;
+.instagram_icon{
+	&:before {
+		content: '\f16d';
+		.FontAwesome_icon_styles;
+	}
+}
+
+
+.twitter_icon{
+	&:before {
+		content: '\f099';
+		.FontAwesome_icon_styles;
+	}
+}
+
+.facebook_icon{
+	&:before {
+		content: '\f09a';
+		.FontAwesome_icon_styles;
+	}
 }
