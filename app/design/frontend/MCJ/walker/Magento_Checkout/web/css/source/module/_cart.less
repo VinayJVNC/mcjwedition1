@@ -26,6 +26,7 @@
         .page-title-wrapper {
             padding-left: @layout__width-xs-indent;
             padding-right: @layout__width-xs-indent;
+	    text-align:@textAlignCenter;
         }
     }
 
@@ -246,7 +247,8 @@
 
                 > .action-edit,
                 > .action-delete {
-                    position: absolute;
+                    //position: absolute;
+		    position: @actionsToolbarActionEditDelete__Position;
                     right: 16px;
                     top: 0;
                     .lib-icon-font(
@@ -365,7 +367,9 @@
         .col.qty,
         .col.subtotal,
         .col.msrp {
-            text-align: right;
+	//text-align: right;
+	text-align: center;
+	vertical-align:middle;
         }
     }
 }
@@ -500,6 +504,9 @@
 //  _____________________________________________
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+	thead {
+		background: @colorMCJW_PMS427;
+	}
     .checkout-cart-index {
         .page-main {
             padding-left: @layout__width-xs-indent;
@@ -528,12 +535,15 @@
 
     //  Summary block
     .cart-summary {
-        .lib-layout-column(2, 2, @layout-column-checkout__width-left);
-        padding: 1px @indent__base @indent__m;
+        //.lib-layout-column(2, 2, @layout-column-checkout__width-left);
+	.cartSummary_floatNWidth;
+        //padding: 1px @indent__base @indent__m;
+	padding: 1px @indent__l_zero @indent__l_zero;
         position: relative;
-
+		background: transparent;
+		top:1px !important;
         > .title {
-            display: block;
+           // display: block;
         }
 
         .fieldset {
@@ -601,7 +611,8 @@
                     padding-right: @indent__base;
                     position: static;
                     vertical-align: top;
-                    width: 1%;
+                    //width: 1%;
+		    width: 50%;
                 }
 
                 &-item-details {
@@ -619,13 +630,21 @@
     }
 
     //  Discount
+	#block-discount {
+		.FullWidthPercent;
+		clear: both;
+	}
+	#block-giftcard {
+		.FullWidthPercent;
+	}
     .cart-discount {
         &:extend(.abs-discount-block-desktop all);
-        .lib-layout-column(2, 1, @layout-column-checkout__width-main);
+        //.lib-layout-column(2, 1, @layout-column-checkout__width-main);
+		.FullWidthPercent;
         border: 0;
         box-sizing: border-box;
-        padding-right: 4%;
-
+        //padding-right: 4%;
+	padding-right: 0%;
         .block {
             .title {
                 &:after {

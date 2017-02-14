@@ -286,7 +286,8 @@
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
     .abs-margin-for-blocks-and-widgets-desktop {
-        margin-bottom: @indent__xl + @indent__s;
+        //margin-bottom: @indent__xl + @indent__s;
+	margin-bottom: 25px;
     }
 }
 
@@ -854,7 +855,7 @@
 //  ---------------------------------------------
 
 @abs-toggling-title: {
-    .lib-css(border-top, @border-width__base solid @border-color__base);
+    //.lib-css(border-top, @border-width__base solid @border-color__base);
     cursor: pointer;
     margin-bottom: 0;
     position: relative;
@@ -917,6 +918,7 @@
             &:extend(.abs-toggling-title all);
             &:after {
                 color: @color-gray52;
+		float:@floatRight;
             }
         }
 
@@ -1564,9 +1566,11 @@
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
     .abs-shopping-cart-items-desktop {
-        .lib-layout-column(2, 1, @layout-column-checkout__width-main);
+        //.lib-layout-column(2, 1, @layout-column-checkout__width-main);
+		.FullWidthPercent;
         &:extend(.abs-add-box-sizing-desktop all);
-        padding-right: 4%;
+        //padding-right: 4%;
+		padding-right: 0%;
         position: relative;
     }
 }
@@ -1908,8 +1912,8 @@
 
             > .title {
                 border: 0;
-                padding: 0 0 @indent__s;
-
+                //padding: 0 0 @indent__s;
+		padding: 0 0 24px;
                 strong {
                     .lib-font-size(16);
                 }

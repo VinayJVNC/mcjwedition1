@@ -64,6 +64,9 @@
 //  _____________________________________________
 
 & when (@media-common = true) {
+	.navigation{
+		text-align:@textAlignCenter;
+	}
     body {
         .lib-css(background-color, @page__background-color);
     }
@@ -471,6 +474,8 @@
         > .page-title-wrapper {
             .page-title {
                 display: inline-block;
+		text-transform: uppercase;
+		font-weight: 600;
             }
 
             .page-title + .action {
