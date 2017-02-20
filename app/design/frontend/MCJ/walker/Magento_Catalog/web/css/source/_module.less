@@ -26,10 +26,11 @@
 		.FontAwesome_icon_styles;
 		.qtyChange;
     }    
-    input#minus1{      
+    
+	input#minus1{      
         content: '\f068';
-	.FontAwesome_icon_styles;
-	.qtyChange;
+		.FontAwesome_icon_styles;
+		.qtyChange;
     }
 
     //  Category view
@@ -91,7 +92,22 @@
             margin-bottom: @indent__base;
         }
     }
-
+	
+	.category {
+		&-view{
+			display: flex;
+		}
+		&-image {
+			width: @category-view-width;
+			float: floatLeft;
+		}
+		&-description {
+			width: @category-view-width;
+			float: floatRight;
+		}
+	}
+	
+	
     //
     //  Product images general container
     //  -----------------------------------------

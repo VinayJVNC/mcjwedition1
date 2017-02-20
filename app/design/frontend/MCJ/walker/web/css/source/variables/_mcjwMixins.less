@@ -22,13 +22,19 @@
 	width: 100%;
 	margin-right: 0%;
 }
+.fontAwesomeFortyPixel{
+	width: @fortyPixel;
+	height: @fortyPixel;
+	line-height: @fortyPixel;
+}
 
 //FontAwesome Icon Style
 .FontAwesome_icon_styles{
     -webkit-font-smoothing: antialiased;
     font-size: 22px;
     line-height: 21px;
-    color: @colorMCJW_PMS425;    
+    color: @color-White;    
+	background: @colorMCJW_PMS425;
     font-family: 'FontAwesome';
     margin: 0;
     vertical-align: top;
@@ -37,7 +43,27 @@
     overflow: hidden;
     speak: none;
     transition: color .25s ease-in-out;
+	box-shadow: 0px 0px 4px 0px @colorMCJW_PMS425;
+    border-radius: 100px;
+    text-align: @textAlignCenter;
+	.fontAwesomeFortyPixel;
 }
+
+.FontAwesome_icon_styles_hover_effects{
+	background: @color-White;
+	color: @colorMCJW_PMS425;
+	box-shadow: 0px 0px 4px 2px @colorMCJW_PMS425;
+	transition: background 0.15s ease-in-out;
+}
+
+.FontAwesome_icon_styles_hover{
+	&:hover{
+		&:before{
+			.FontAwesome_icon_styles_hover_effects;
+		}
+	}
+}
+
 .qtyChange{
 	width: 52px;
 	height: 32px; 

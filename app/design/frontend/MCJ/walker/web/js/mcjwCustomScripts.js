@@ -2,7 +2,7 @@ require([
 	'jquery',
 	],function($){
 		$(document).ready(function(){
-			$('.page-header,.header.content').wrapAll("<div class='staticFixedHeader'></div>");
+			$('.page-header, .header.content, .sections.nav-sections').wrapAll("<div class='staticFixedHeader'></div>");
 			$("<div class='GutterSpace'></div>").insertAfter(".staticFixedHeader");
 			
 			/*Search transition*/
